@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- <link href="./src/output.css" rel="stylesheet"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 13px; text-align: center; }
+    .attribution a { color: hsl(219, 62%, 58%); }
+  
+  </style>
+</head>
+
+<body>
+
+  <div class="flex flex-col pt-10 px-5 lg:py-0 lg:px-60 xl:px-110">
+
+    <div class="flex justify-between mb-9 lg:mb-13">
+      <h1 class="text-3xl font-semibold text-Gray-50 lg:text-4xl">T O D O</h1>
+      <button onclick="toggleTheme()"> 
+        <div class="
+          bg-[url('/images/icon-moon.svg')] bg-no-repeat bg-cover bg-center w-7 h-7
+          dark:bg-[url('/images/icon-sun.svg')]
+        "></div>
+      </button>
+    </div>
+  
+    <div class="flex items-center h-12 mb-5 lg:h-15 lg:mb-10">
+      <p class="absolute size-4 border border-Gray-300 rounded-full mx-3 dark:border-gray-600 
+      lg:size-6 lg:mx-6"></p>
+      <input type="text" placeholder="Create a new todo..." class="create">
+    </div>
+
+    <div class="todo-list">
+
+
+
+
+      
+    </div>
+    <div class="state">
+        <p>0 items left</p>
+        <button class="hover:text-Purple-300">Clear Completed</button>
+      </div>
+
+    <div class="filter">
+      <button class="all text-sky-300">All</button>
+      <button class="active">Active </button>
+      <button class="completed">Completed</button>
+    </div>
+      
+  </div>
+
+
+  
+
+  <div class="flex items-center justify-center text-gray-400 font-medium">Drag and drop to reorder list</div>
+
+  <div class="attribution text-gray-500 py-5">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/h%E1%BA%A3i-%C3%A2u-%C4%91o%C3%A0n-559647377/" target="_blank">Hy Owl</a>.
+  </div>
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
