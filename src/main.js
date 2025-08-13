@@ -45,7 +45,7 @@ function appendTask(data) {
                     ">
                 </div>
                 <p class="task">${data}</p>
-                <button class="removeBtn"><img src="../images/icon-cross.svg"></button>
+                <button class="removeBtn"><img src="./images/icon-cross.svg"></button>
             </div>
             <hr class="text-Gray-300 dark:text-Purple-600">
         </div>
@@ -213,7 +213,7 @@ function loadFromLocalStorage() {
                             ">
                         </div>
                         <p class="task ${task.completed ? 'line-through' : ''}">${task.text}</p>
-                        <button class="removeBtn"><img src="../images/icon-cross.svg"></button>
+                        <button class="removeBtn"><img src="./images/icon-cross.svg"></button>
                     </div>
                     <hr class="text-Gray-300 dark:text-Purple-600">
                 </div>            
@@ -223,5 +223,6 @@ function loadFromLocalStorage() {
         })
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', loadFromLocalStorage);
